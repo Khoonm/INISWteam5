@@ -1,0 +1,23 @@
+/* 메인 레이아웃 스타일 설정 */
+.main-layout {
+  display: flex; /* 플렉스 박스 설정 */
+  height: 100%; /* 높이를 100%로 설정 */
+}
+
+
+  /* 메인 레이아웃에서 사이드바가 비활성화된 경우 스타일 설정 */
+  .main-layout.no-sidebar .content {
+    margin-right: 0; /* 사이드바 너비만큼 content 영역을 오른쪽으로 밀지 않음 */
+  }
+
+
+  /* 컨텐츠 영역 스타일 설정 */
+  .main-layout .content {
+    color: #2c3e50; /* 텍스트 색상 설정 */
+    flex-grow: 1; /* 남은 공간을 모두 차지하도록 설정 */
+    padding: 20px; /* 패딩 설정 */
+    height: calc(100vh - 50px); /* Content 영역도 화면 전체 높이로 설정, 헤더 높이를 제외 */
+    overflow-y: auto; /* Content 영역이 넘칠 경우 수직 스크롤 생성 */
+    margin-top: 25px; /* 사이드바 너비만큼 content 영역을 오른쪽으로 밀기 */
+    margin-left: 200px; /* 사이드바 너비만큼 content 영역을 오른쪽으로 밀기 */
+  }

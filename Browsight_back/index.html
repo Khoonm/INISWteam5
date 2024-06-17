@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+   <title>express</title>
+ </head>
+ <body>
+   <h2>백엔드 서버 테스트</h2>
+   <p>메인 페이지</p>
+   <hr />
+   <p>/employee</p>
+    <div>
+      <p>사원 테이블</p>
+      <p>/:USER_KEY_CD 로 개별 조회 가능</p>
+      <p>USER_KEY_CD, USER_NM, REG_YMD, DEPT_NM, HP_NUM 요구</p>
+    </div>
+  <hr />
+  <p>/work</p>
+    <div>
+      <p>업무 테이블 - 근태관리</p>
+      <p>/:IDX_CD 로 개별 조회 가능</p>
+      <p>IDX_CD, USER_KEY_CD, DATE_YMD, TIME_DT, FIN_FLG 요구</p>
+    </div>
+  <hr />
+  <p>/ticket</p>
+    <div>
+      <p>티켓 테이블</p>
+      <p>/:TICKET_IDX 로 개별 조회 가능</p>
+      <p>TICKET_IDX, USER_KEY_CD, TITLE_STR, DATE_ST_YMD, DATE_END_YMD, CONTENT_STR, MANAGER_STR, STATUS_FLG 요구</p>
+    </div>
+  <hr />
+  <p>/crawledData</p>
+    <div>
+      <p>크롤링된 데이터 테이블</p>
+      <p>/:IDX_CD 로 개별 조회 가능</p>
+      <p>IDX_CD, USER_KEY_CD, GET_DATE_YMD, GET_TIME_DT, URL_STR, DATA_STR, TYPE_FLG 요구</p>
+    </div>
+  <hr />
+  <p>/group</p>
+    <div>
+      <p>그룹화 테이블</p>
+      <p>/:GROUP_IDX 로 개별 조회 가능</p>
+      <p>GROUP_IDX, TICKET_IDX, GROUP_NUM, USER_KEY_CD, DATE_YMD, DATA_CNT, HEAD_KEYWORD_STR, KEYWORD_STR, WORK_FLG, SCORE_NUM 요구</p>
+    </div>
+ </body>
+</html>

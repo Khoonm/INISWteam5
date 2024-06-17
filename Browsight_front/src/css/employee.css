@@ -1,0 +1,219 @@
+/* 관리 컨테이너 스타일 설정 */
+.management-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* 직원 헤더 스타일 설정 */
+.employee-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* 직원 검색 스타일 설정 */
+.employee-search {
+  display: flex;
+  gap: 10px;
+}
+
+.employee-input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.search-button, .register-button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 부서 필터 스타일 설정 */
+.department-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.department-button {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.department-button.active {
+  background-color: #3498db;
+  color: white;
+}
+
+/* 직원 테이블 헤더 스타일 설정 */
+.employee-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.employee-table-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.employee-table-header select {
+  padding: 5px;
+  font-size: 16px;
+}
+
+/* 테이블 컨테이너 스타일 설정 */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* 직원 테이블 스타일 설정 */
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.employee-table th, .employee-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.employee-table th {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.employee-table td {
+  background-color: #fff;
+}
+
+/* 정렬 버튼 스타일 설정 */
+.sort-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+/* 페이지네이션 스타일 설정 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page-button.active {
+  background-color: #2ecc71;
+}
+
+/* 모달 오버레이 스타일 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 모달 스타일 */
+.modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px; /* 모달 창 너비를 키움 */
+}
+
+.modal h3 {
+  margin-top: 0;
+}
+
+.modal label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.modal input {
+  padding: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal input::placeholder {
+  color: #888;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-buttons button:first-child {
+  background-color: #ccc;
+}
+
+.modal-buttons button:last-child {
+  background-color: #3498db;
+  color: white;
+}
+
+.modal-buttons button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.modal-buttons button.disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+}

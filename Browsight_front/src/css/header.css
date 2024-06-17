@@ -1,0 +1,27 @@
+/* 헤더 스타일 설정 */
+.header {
+    background-color: #34495e; /* 헤더 배경색 설정 */
+    color: #ffffff; /* 헤더 텍스트 색상 설정 */
+    padding: 10px; /* 패딩 설정 */
+    display: flex; /* 플렉스 박스 설정 */
+    justify-content: space-between; /* 공간을 양쪽 끝으로 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    height: 50px; /* 헤더 높이를 설정 */
+    box-sizing: border-box; /* 패딩을 포함한 박스 모델 적용 */
+    position: fixed; /* 헤더를 고정하여 스크롤해도 항상 보이도록 설정 */
+    width: 100%; /* 헤더가 화면 전체 너비를 차지하도록 설정 */
+    top: 0; /* 헤더를 맨 위에 고정 */
+  }
+  
+  /* 헤더 왼쪽 영역 스타일 설정 */
+  .header-left h2 {
+    padding: 20px; /* 패딩 설정 */
+    margin: 0; /* 마진 제거 */
+  }
+  
+  /* 헤더 오른쪽 영역 스타일 설정 */
+  .header-right {
+    padding: 20px; /* 패딩 설정 */
+    font-size: 16px; /* 폰트 크기 설정 */
+  }
+  

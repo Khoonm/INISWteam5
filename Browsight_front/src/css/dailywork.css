@@ -1,0 +1,156 @@
+.dailywork-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .dailywork-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .dailywork-header input[type="date"] {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .dailywork-header button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .employee-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .table-header span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .table-header select {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* 테이블이 최소한으로 차지하는 너비 */
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 설정 */
+    text-overflow: ellipsis; /* 텍스트가 넘칠 경우 생략 부호(...) 추가 */
+    overflow: hidden; /* 넘치는 텍스트 숨기기 */
+  }
+  
+  .status-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .status-button.collecting {
+    background-color: #a9a9a9;
+    color: white;
+    cursor: default;
+    pointer-events: none;
+  }
+  
+  .status-button.completed {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .dailywork-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .dailywork-modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-height: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+  }
+  
+  .dailywork-modal h3 {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .dailywork-modal .modal-content {
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  
+  .dailywork-modal .modal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .dailywork-modal .modal-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .dailywork-modal .modal-table .section-header {
+    text-align: center;
+    font-weight: bold;
+    background-color: #f0f0f0;
+  }
+  
+  .dailywork-modal button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .DynamicImageComponent{
+    /* margin-right: 200px; */
+    
+  }
